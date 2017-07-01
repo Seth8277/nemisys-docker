@@ -6,9 +6,8 @@ RUN	apt-get update \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/iTXTech/Nemisys.git
-
-WORKDIR Nemisys
+RUN git clone https://github.com/iTXTech/Nemisys.git \
+	&& cd Nemisys
 
 RUN git submodule update --init \
 	mvn clean \
