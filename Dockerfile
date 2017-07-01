@@ -27,6 +27,6 @@ ADD server.properties ./
 VOLUME ["/srv/nemisys/plugins"]
 
 EXPOSE 19132
-EXPOSE 9921
+EXPOSE 19921
 
 CMD ["java", "-jar", "/nemisys-1.0-SNAPSHOT.jar"]
